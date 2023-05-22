@@ -1,1 +1,37 @@
-<p>register works!</p>
+<main class="form-signin w-100 m-auto">
+    <form>
+        <img class="mb-4" src="/assets/img/chamaai.png" alt="Logo Chama Ai" width="300" height="300">
+        <h2 class="h2 mb-2 fw-normal">Chama Ai</h2>
+        <h5 class="mb-3 Fw-normal">Criar a sua conta!!</h5>
+
+        <div class="form-floating">
+            <input type="text" class="form-control" id="floatingInput" placeholder="Name" >
+            <label for="name"><i class="bx bxs-user"></i>Nome</label>
+        </div>
+
+        <div class="form-floating">
+            <input type="email" class="form-control" id="floatingInput" placeholder="Email">
+            <label for="floatingInput"><i class="bx bxs-envelope"></i>Email</label>
+        </div>
+
+        <div class="form-floating">
+            <input type="password" class="form-control" id="floatingPassword" placeholder="Senha">
+            <label for="floatingPassword"><i class='bx bx-lock'></i>Senha
+            </label>
+        </div>
+
+        <div class="checkbox my-2 text-start">
+            <label>
+                <input type="checkbox" value="remember-me">Manter Conectado?
+            </label>
+        </div>
+
+        <button class="w-100 btn btn-lg btn-warning mb-2" type="submit">Criar Conta</button>
+
+        <div class="border-text"></div>
+
+        <a routerLink="/login" class="w-100 btn btn-lg btn-success">Entrar</a>
+
+        <p class="mt-5 mb-3 text-body-secondary">&copy; 2023</p>
+    </form>
+</main>

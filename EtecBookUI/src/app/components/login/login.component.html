@@ -1,1 +1,31 @@
-<p>login works!</p>
+<main class="form-signin w-100 m-auto">
+    <form [FormGroup]="loginForm">
+        <img class="mb-4" src="/assets/img/chamaai.png" alt="Logo Chama Ai" width="300" height="300">
+        <h2 class="h2 mb-2 fw-normal">Chama Ai</h2>
+        <h5 class="mb-3 Fw-normal">O Mais Proximo A Você</h5>
+
+        <div class="form-floating">
+            <input type="text" class="form-control" id="floatingInput" placeholder="Email" formControlName="email">
+            <label for="floatingInput"><i class="bx bxs-user"></i>Email</label>
+        </div>
+        <div class="form-floating">
+            <input type="password" class="form-control" id="floatingPassword" placeholder="Senha" formControlName="senha">
+            <label for="floatingPassword"><i class='bx bx-lock'></i>Senha
+            </label>
+        </div>
+
+        <div class="checkbox my-2 text-start">
+            <label>
+                <input type="checkbox" value="remember-me">Manter Conectado?
+            </label>
+        </div>
+
+        <button class="w-100 btn btn-lg btn-warning mb-2" type="submit">Entrar</button>
+        <a class="forgetPass" routerLink="/forget">Esqueceu a senha </a>
+        
+        <div class="border-text"></div>
+        <a routerLink="/register" class="w-100 btn btn-lg btn-sucess">Criar conta</a>
+        
+        <p class="mt-5 mb-3 text-body-secondary">&copy; 2023</p>
+    </form>
+</main>
