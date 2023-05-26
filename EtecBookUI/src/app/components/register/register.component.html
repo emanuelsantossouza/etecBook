@@ -1,21 +1,25 @@
 <main class="form-signin w-100 m-auto">
-    <form>
+
+    <form [formGroup]="registerForm">
         <img class="mb-4" src="/assets/img/chamaai.png" alt="Logo Chama Ai" width="300" height="300">
         <h2 class="h2 mb-2 fw-normal">Chama Ai</h2>
         <h5 class="mb-3 Fw-normal">Criar a sua conta!!</h5>
 
         <div class="form-floating">
-            <input type="text" class="form-control" id="floatingInput" placeholder="Name" >
+            <input formControlName="name" type="text" class="form-control" id="floatingInput" placeholder="Name" 
+            [class.is-invalid]="CheckName()">
             <label for="name"><i class="bx bxs-user"></i>Nome</label>
+            <span *ngIf="CheckName()" class="text-danger text-start d-block mt-1">*Campo Obrigatorio</span>
         </div>
 
         <div class="form-floating">
-            <input type="email" class="form-control" id="floatingInput" placeholder="Email">
+            <input type="email" formControlName="email" class="form-control" id="floatingInput" placeholder="Email"
+            [class.is-invalid]="CheckName() || CheckEmailValid()">
             <label for="floatingInput"><i class="bx bxs-envelope"></i>Email</label>
         </div>
 
         <div class="form-floating">
-            <input type="password" class="form-control" id="floatingPassword" placeholder="Senha">
+            <input type="password" formControlName="password" class="form-control" id="floatingPassword" placeholder="Senha">
             <label for="floatingPassword"><i class='bx bx-lock'></i>Senha
             </label>
         </div>
