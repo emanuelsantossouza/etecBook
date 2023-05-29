@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\etec\\Desktop\\etecBook\\EtecBookApi\\EtecBookApi\\EtecBookApi.csproj": {}
+    "C:\\ionic\\etecBook\\EtecBookApi\\EtecBookApi\\EtecBookApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\etec\\Desktop\\etecBook\\EtecBookApi\\EtecBookApi\\EtecBookApi.csproj": {
+    "C:\\ionic\\etecBook\\EtecBookApi\\EtecBookApi\\EtecBookApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\etec\\Desktop\\etecBook\\EtecBookApi\\EtecBookApi\\EtecBookApi.csproj",
+        "projectUniqueName": "C:\\ionic\\etecBook\\EtecBookApi\\EtecBookApi\\EtecBookApi.csproj",
         "projectName": "EtecBookApi",
-        "projectPath": "C:\\Users\\etec\\Desktop\\etecBook\\EtecBookApi\\EtecBookApi\\EtecBookApi.csproj",
+        "projectPath": "C:\\ionic\\etecBook\\EtecBookApi\\EtecBookApi\\EtecBookApi.csproj",
         "packagesPath": "C:\\Users\\etec\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\etec\\Desktop\\etecBook\\EtecBookApi\\EtecBookApi\\obj\\",
+        "outputPath": "C:\\ionic\\etecBook\\EtecBookApi\\EtecBookApi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\etec\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -40,6 +40,24 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[6.0.16, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.16, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.16, )"
+            },
+            "Pomelo.EntityFrameworkCore.MySql": {
+              "target": "Package",
+              "version": "[6.0.2, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.2.3, )"
