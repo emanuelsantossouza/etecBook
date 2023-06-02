@@ -1,0 +1,6 @@
+Dtos
+- como criar dtos?
+
+1- crie a pasta de dtos
+2- crie a classe e as suas propriedades
+3- no controller programe para receber o arquivo dto
