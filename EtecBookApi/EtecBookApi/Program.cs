@@ -10,7 +10,7 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-string conn =builder.Configuration.GetConnectionString("etecbookdb");
+string conn =builder.Configuration.GetConnectionString("EtecBookConn");
 
 var server = ServerVersion.AutoDetect(conn);
 builder.Services.AddDbContext<AppDbContext>(options =>{
